@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "UPE Chrome Extension",
+	"description": "Parse data from BU student link schedule and export it as .ics file for import",
+	"version": "1.0",
+	"action": {
+		"default_popup": "scrape.html",
+		"default_icon": "images/terrier.png"
+	},
+	"permissions": [
+		"identity",
+		"tabs",
+		"activeTab",
+        "downloads",
+		"scripting"
+	],
+	"host_permissions": [
+		"https://*/*",
+		"http://*/*"
+	]
+}
